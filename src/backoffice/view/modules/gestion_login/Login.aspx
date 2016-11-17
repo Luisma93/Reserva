@@ -40,23 +40,30 @@
           <div class="box-header">
               <asp:Label ID="Label1" runat="server" class="box-title" Text="Usuario o contraseña invalido" ForeColor ="red"></asp:Label><br>
           </div>
-
+          <asp:Label ID="Label2" runat="server" class="box-title" Text="Correo" ></asp:Label><br>
       <div class="form-group has-feedback">
-          <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Email">Correo</asp:TextBox>
+            
+          <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Email">Ej: alex@ejemplo.com</asp:TextBox>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
+          <asp:Label ID="Label3" runat="server" class="box-title" Text="Contraseña" ></asp:Label><br>
       <div class="form-group has-feedback">
-         <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Password">Contraseña</asp:TextBox>
+           
+         <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Password">********</asp:TextBox>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-        <div class="col-xs-8">
-            <a  href="RecuperarPassword.aspx">¿Olvidaste tu contraseña?</a><br><br>
-        </div>
-         
         <!-- /.col -->
-        <div class="col-xs-12">
-          <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-block btn-flat" Text="Iniciar" />
+         
+        <div  class="col-xs-12">
+    
+             <asp:Button ID="Button1" runat="server" class="btn bg-olive btn-primary btn-block btn-flat" Text="Iniciar Sesión" Width="110px"  />
+
+        </div>
+             
+
+          <div class="col-xs-8">
+            <a  href="RecuperarPassword.aspx">¿Olvidaste tu contraseña?</a><br><br>
         </div>
         <!-- /.col -->
       </div>

@@ -40,14 +40,15 @@
     <p class="login-box-msg">Por favor ingrese correo</p>
 
       <form id="form1" runat="server">
+                    <asp:Label ID="Label2" runat="server" class="box-title" Text="Correo" ></asp:Label><br>
       <div class="form-group has-feedback">
-         <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Email">Correo</asp:TextBox>
+         <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Email">Ej: alex@ejemplo.com</asp:TextBox>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="row">
             <div class="col-xs-12 text-center">
            
-              <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-flat btn-block" Text="Recordar contraseña" />
+              <asp:Button ID="Button1" runat="server" class="btn bg-olive btn-primary btn-flat btn-block" Text="Recordar contraseña"  Width="170px"/>
             </div>
         <!-- /.col -->
             
